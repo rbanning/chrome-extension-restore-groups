@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { Tabs } from "../shared/tabs";
 import { StorageService } from "../shared/storage.service";
+import { Header } from "../shared/components";
 
 import './styles.scss';
 
@@ -48,7 +49,8 @@ const Popup = () => {
 
   return (
     <>
-      <ul style={{ minWidth: "700px" }}>
+      <Header />
+      <ul style={{ margin: "1em 0" }}>
         <li>Current URL: {currentURL}</li>
         <li>Current Color: {color}</li>
       </ul>

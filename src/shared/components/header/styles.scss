@@ -1,0 +1,21 @@
+@import '../../variables';
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+
+  background-color: $color-toolbar-background;
+
+  .title {
+    font-size: 1.2em;
+  }
+
+  .brand {
+    font-size: 0.8em;
+  }
+
+  .flex {
+    flex: 1;
+  }
+}

@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 
+import { Header } from "../shared/components";
 import { SelectColor } from "./select-color.component";
 
 import { IUser, UserService, User } from '../shared/users'
@@ -30,6 +31,7 @@ const Options = () => {
 
   return (
     <>
+      <Header title="+Options"/>
       <User user={user}/>
       <hr/>
       <h2>Select a Color</h2>

@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 
+import { Header } from "../shared/components";
+
 import './styles.scss';
 
 const Welcome = () => {
@@ -24,8 +26,9 @@ const Welcome = () => {
 
   return (
     <>
+      <Header />
       <h1>
-        <img src={imgUrl} alt="ext cord icon"/>
+        <img src={imgUrl} alt="app icon"/>
         Welcome!
       </h1>
       <h2 id="count">The Count is {count}</h2>
