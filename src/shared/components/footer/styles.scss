@@ -1,0 +1,22 @@
+@import '../../variables';
+
+.footer-wrapper {
+  display: block;
+  margin: 2em 0 0 0;
+  border-top: solid 1px #000;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+
+  font-size: 0.8em;
+  color: $color-toolbar-foreground;
+  background-color: lighten($color-toolbar-background, 20%);
+
+  .flex {
+    flex: 1;
+  }
+}

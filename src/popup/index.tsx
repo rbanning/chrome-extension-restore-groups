@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { Tabs } from "../shared/tabs";
 import { StorageService } from "../shared/storage.service";
-import { Header } from "../shared/components";
+import { Header, Footer } from "../shared/components";
 
 import './styles.scss';
 
@@ -61,6 +61,7 @@ const Popup = () => {
         count up
       </button>
       <button onClick={changeBackground}>change background</button>
+      <Footer />
     </>
   );
 };

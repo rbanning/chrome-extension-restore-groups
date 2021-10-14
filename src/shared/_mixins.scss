@@ -5,6 +5,11 @@
   font-size: $size;
   color: $color-foreground;
   background-color: $color-background;
+
+  margin: 0;
+  padding: 0;
+
+  min-width: 400px;
 }
 
 @mixin button-setup ($size: $font-size-default /* 1.2rem for larger */) {

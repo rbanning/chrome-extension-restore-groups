@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 
-import { Header } from "../shared/components";
+import { Header, Footer } from "../shared/components";
 
 import './styles.scss';
 
@@ -35,6 +35,7 @@ const Welcome = () => {
       <p>
         <button onClick={updateCount}>Increment</button>
       </p>
+      <Footer />
     </>
   );
 };
