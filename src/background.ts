@@ -1,5 +1,6 @@
 import { StorageService } from "./shared/storage.service";
 import { Common } from "./shared/common";
+import { TabGroupManager } from "./shared/tab-group-manager";
 
 const rules = [
   {
@@ -33,6 +34,13 @@ chrome.runtime.onInstalled.addListener(async (details) => {
 
   }
 
+
+  //TEST
+  const manager = new TabGroupManager();
+  manager.getInCurrentWindow()
+    .then(groups => {
+      console.log("DEBUG: background.js - tab groups", {groups});
+    });
   
   //setup the default color
   StorageService.get('color', (result) => {

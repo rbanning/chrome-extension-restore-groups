@@ -39,7 +39,7 @@
   },
 
   "permissions": [
-    "storage", "tabs", "activeTab", "declarativeContent"
+    "storage", "tabs", "activeTab", "declarativeContent", "tabGroups"
   ],
 
 
